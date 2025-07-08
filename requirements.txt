@@ -4,7 +4,7 @@ pandas~=2.3.0
 beautifulsoup4~=4.13.4
 lxml
 aiohttp~=3.12.13
-elasticsearch~=9.0.2
+elasticsearch~=8.13.0
 python-dotenv
 aiohttp
 aiofiles
@@ -20,3 +20,7 @@ typing_extensions~=4.14.0
 playwright~=1.53.0
 typing_extensions~=4.14.0
 pydantic~=2.11.7
+
+packaging~=25.0
+typing_extensions~=4.14.0
+pytest~=8.4.1
