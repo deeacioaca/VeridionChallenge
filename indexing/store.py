@@ -13,7 +13,7 @@ if __name__ == "__main__":
     except Exception as e:
         print("Connection error:", e)
 
-    # Specify your target index name
+    # Specify target index name
     index_name = "companies"
 
     # Create index with default settings if it doesn't exist
@@ -24,7 +24,6 @@ if __name__ == "__main__":
     with open(MERGED, "r") as file:
         for line in file:
             doc = json.loads(line)
-            # You can specify your own document ID if needed, here we let ES auto-generate
             es.index(index=index_name, document=doc)
 
     print("Data indexing completed successfully.")

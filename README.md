@@ -25,6 +25,9 @@ Execute the following steps in order to scrape, store, and run the API:
 
 python run_scraper.py
 
+- My result:
+![img.png](img.png)
+
 ### 📊 2. Analyze Scraping Results
 
 python analyze_scrape.py
@@ -32,6 +35,9 @@ python analyze_scrape.py
 ### 🔗 3. Merge with Company Names
 
 python merge.py
+
+- My result:
+![img_2.png](img_2.png)
 
 ### 🐳 4. Start Docker for Elasticsearch
 Make sure Docker is installed and running. Then, start the Elasticsearch container:
@@ -43,6 +49,7 @@ http://localhost:9200
 
 Kibana will be available at:
 http://localhost:5601
+![img_3.png](img_3.png)
 
 ### 🖨️ 6. Print and Inspect Stored Data (optional)
 
@@ -63,6 +70,9 @@ You can now POST to /match_company with:
 - facebook
 
 The API will respond with the best-matching company profile based on your input.
+
+- My result using Postman:
+![img_4.png](img_4.png)
 
 ## ✨ Andreea's thought process
 
@@ -95,7 +105,7 @@ The last configuration struck the best balance between speed and reliability.
 ### 📊 Observability
 
 Structured logging and real-time error tracking were instrumental in identifying and fixing issues. Timeout errors were the most frequent, leading to increased timeout thresholds that improved success rates.
-
+![img_1.png](img_1.png)
 ---
 
 This iterative and data-driven approach transformed the scraper into a robust, scalable pipeline capable of operating reliably across a variety of websites and network conditions.
