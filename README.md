@@ -109,3 +109,13 @@ Structured logging and real-time error tracking were instrumental in identifying
 ---
 
 This iterative and data-driven approach transformed the scraper into a robust, scalable pipeline capable of operating reliably across a variety of websites and network conditions.
+
+## 🚀 Future Improvements
+
+- **Geolocation Enrichment**: Integrate geocoding APIs (e.g., Google Maps, OpenStreetMap) to convert extracted addresses into latitude/longitude coordinates for spatial filtering or clustering.
+- **Fuzzy Matching**: Improve matching accuracy using fuzzy string similarity (e.g., Levenshtein, Jaro-Winkler) or embedding-based semantic similarity.
+- **Proxy & CAPTCHA Handling**: Integrate proxy rotation and CAPTCHA-solving mechanisms to reduce failures on protected domains.
+- **Data Quality Scoring**: Assign confidence scores to scraped data points and matches to help assess reliability.
+- **UI Dashboard**: Create a lightweight front-end or dashboard to visualize scraping statistics, match results, and error logs.
+- **Monitoring & Alerts**: Add metrics collection (e.g., Prometheus, Grafana) and alerting for failures, timeouts, or data anomalies.
+- **Export Queried Data**: Implement an export mechanism to allow users to download the data returned by the API in CSV or PDF format for further use or reporting.
