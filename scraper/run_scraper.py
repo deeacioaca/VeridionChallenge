@@ -39,7 +39,7 @@ async def process_domain(session, domain: str, i: int):
     address = extract_address(html)
 
     return {
-        "website": url,
+        "domain": url,
         "phone_numbers": "; ".join(phones),
         "social_links": "; ".join(socials),
         "address": address if address else ""
